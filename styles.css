@@ -1,0 +1,115 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F0FF42;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: yellow;
+    width: 470px;
+    height: 100px;
+    background-color: teal;
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+
+}
+.subtitulo {
+    color: white;
+    font-size: 20px;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+.tarjeta-de-chinpokomon{
+    width: 190px;
+    height: 140px;
+    background:#82cd47;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tarjeta-de-chinpokomon img {
+    width: 80px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: #54b435;
+    border: 2px solid white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+}
+
+input{
+    display:none;
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton-de-ataque{
+    background-color: #54b435;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#mensajes {
+    width: 280px;
+    background: #EEEEEE;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: #11468F;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ataques, .tarjetas-ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: blue;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
